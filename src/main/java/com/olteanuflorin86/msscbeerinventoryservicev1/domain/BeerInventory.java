@@ -3,7 +3,10 @@ package com.olteanuflorin86.msscbeerinventoryservicev1.domain;
 import java.sql.Timestamp; 
 import java.util.UUID;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+
+import org.hibernate.annotations.Type;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -29,7 +32,10 @@ public class BeerInventory extends BaseEntity {
         this.quantityOnHand = quantityOnHand;
     }
 
+	@Type(type="org.hibernate.type.UUIDCharType")
+    @Column(length = 36, columnDefinition = "varchar(36)", updatable = false, nullable = false )
     private UUID beerId;
+	
     private String upc;
     private Integer quantityOnHand = 0;
 }
