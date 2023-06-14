@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RequiredArgsConstructor
-@Component
+//@Component
 public class BeerInventoryBootstrap implements CommandLineRunner{
 
 	public static final String BEER_1_UPC = "0631234200036";
