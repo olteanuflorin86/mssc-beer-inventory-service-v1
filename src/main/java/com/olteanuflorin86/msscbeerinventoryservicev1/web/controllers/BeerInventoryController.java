@@ -1,6 +1,6 @@
 package com.olteanuflorin86.msscbeerinventoryservicev1.web.controllers;
 
-import java.util.List; 
+import java.util.List;  
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -22,7 +22,7 @@ public class BeerInventoryController {
 	
 	private final BeerInventoryRepository beerInventoryRepository;
 	private final BeerInventoryMapper beerInventoryMapper;
-
+	
 	@GetMapping("/api/v1/beer/{beerId}/inventory")
 	public List<BeerInventoryDto> listBeersById(@PathVariable("beerId") UUID beerId) {
 		log.info("Finding Inventory for beerId:" + beerId);
