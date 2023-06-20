@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.olteanuflorin86.brewery.model.BeerInventoryDto;
 import com.olteanuflorin86.msscbeerinventoryservicev1.repositories.BeerInventoryRepository;
 import com.olteanuflorin86.msscbeerinventoryservicev1.web.mappers.BeerInventoryMapper;
-import com.olteanuflorin86.msscbeerinventoryservicev1.web.model.BeerInventoryDto;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

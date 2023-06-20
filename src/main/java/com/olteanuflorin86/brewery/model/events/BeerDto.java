@@ -1,4 +1,4 @@
-package com.olteanuflorin86.common.events;
+package com.olteanuflorin86.brewery.model.events;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

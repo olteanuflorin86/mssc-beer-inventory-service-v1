@@ -4,7 +4,7 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.olteanuflorin86.common.events.NewInventoryEvent;
+import com.olteanuflorin86.brewery.model.events.NewInventoryEvent;
 import com.olteanuflorin86.msscbeerinventoryservicev1.config.JmsConfig;
 import com.olteanuflorin86.msscbeerinventoryservicev1.domain.BeerInventory;
 import com.olteanuflorin86.msscbeerinventoryservicev1.repositories.BeerInventoryRepository;

@@ -1,4 +1,4 @@
-package com.olteanuflorin86.msscbeerinventoryservicev1.web.model;
+package com.olteanuflorin86.brewery.model;
 
 import java.time.OffsetDateTime;
 import java.util.UUID;
