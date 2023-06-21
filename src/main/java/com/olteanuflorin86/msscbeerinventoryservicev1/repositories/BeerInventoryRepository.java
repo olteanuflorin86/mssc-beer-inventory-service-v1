@@ -12,4 +12,6 @@ import com.olteanuflorin86.msscbeerinventoryservicev1.domain.BeerInventory;
 public interface BeerInventoryRepository extends JpaRepository<BeerInventory, UUID>{
 
 	List<BeerInventory> findAllByBeerId(UUID beerId);
+	
+	List<BeerInventory> findAllByUpc(String upc);
 }
